@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../neural_acc_v1_0_project.ip_user_files/ip/blk_mem_gen_7/sim/blk_mem_gen_7.v"
+verilog xil_defaultlib  "../../../../blk_mem_gen_6/sim/blk_mem_gen_6.v"
+verilog xil_defaultlib  "../../../../blk_mem_gen_5/sim/blk_mem_gen_5.v"
+verilog xil_defaultlib  "../../../../blk_mem_gen_4_1/sim/blk_mem_gen_4.v"
+verilog xil_defaultlib  "../../../../blk_mem_gen_3/sim/blk_mem_gen_3.v"
+verilog xil_defaultlib  "../../../../blk_mem_gen_2/sim/blk_mem_gen_2.v"
+verilog xil_defaultlib  "../../../../blk_mem_gen_1/sim/blk_mem_gen_1.v"
+verilog xil_defaultlib  "../../../../blk_mem_gen_0/sim/blk_mem_gen_0.v"
+verilog xil_defaultlib  "../../../../backend_module.v"
+verilog xil_defaultlib  "../../../../frontend_module.v"
+verilog xil_defaultlib  "../../../../neural_acc_1.0/hdl/neural_acc_v1_0.v"
+verilog xil_defaultlib  "../../../../neural_acc_1.0/hdl/neural_acc_v1_0_S00_AXI.v"
+verilog xil_defaultlib  "../../../../neural_acc_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

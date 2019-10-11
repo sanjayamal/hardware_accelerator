@@ -1,0 +1,157 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Sep  7 16:13:39 2019
+# Process ID: 11304
+# Current directory: C:/ip_repo/neural_acc_v1_0_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8528 C:\ip_repo\neural_acc_v1_0_project\neural_acc_v1_0_project.xpr
+# Log file: C:/ip_repo/neural_acc_v1_0_project/vivado.log
+# Journal file: C:/ip_repo/neural_acc_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source neural_acc_tb.tcl
+add_wave {{/neural_acc_tb/neural_acc_v1_0/frontend_module/done}} {{/neural_acc_tb/neural_acc_v1_0/frontend_module/dina_input_ram}} {{/neural_acc_tb/neural_acc_v1_0/frontend_module/tvalid_in}} {{/neural_acc_tb/neural_acc_v1_0/frontend_module/tready_in}} {{/neural_acc_tb/neural_acc_v1_0/frontend_module/addra_input_ram}} {{/neural_acc_tb/neural_acc_v1_0/frontend_module/addrb_input_ram}} {{/neural_acc_tb/neural_acc_v1_0/frontend_module/doutb_input_ram}} {{/neural_acc_tb/neural_acc_v1_0/frontend_module/wea}} {{/neural_acc_tb/neural_acc_v1_0/frontend_module/counter}} 
+restart
+run all
+save_wave_config {C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+set_property xsim.view {C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg} [get_filesets sim_1]
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+source neural_acc_tb.tcl
+restart
+run all
+restart
+run all
+save_wave_config {C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+source neural_acc_tb.tcl
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+source neural_acc_tb.tcl
+restart
+run all
+set_property -dict [list CONFIG.Write_Depth_A {786}] [get_ips blk_mem_gen_1]
+generate_target all [get_files  C:/ip_repo/blk_mem_gen_1/blk_mem_gen_1.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files C:/ip_repo/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_1_synth_1
+launch_runs -jobs 2 blk_mem_gen_1_synth_1
+export_simulation -of_objects [get_files C:/ip_repo/blk_mem_gen_1/blk_mem_gen_1.xci] -directory C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.ip_user_files -ipstatic_source_dir C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/modelsim} {questa=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/questa} {riviera=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/riviera} {activehdl=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+open_wave_config C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+source neural_acc_tb.tcl
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+source neural_acc_tb.tcl
+restart
+run all
+set_property -dict [list CONFIG.Write_Depth_A {785}] [get_ips blk_mem_gen_1]
+generate_target all [get_files  C:/ip_repo/blk_mem_gen_1/blk_mem_gen_1.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files C:/ip_repo/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_1_synth_1
+launch_runs -jobs 2 blk_mem_gen_1_synth_1
+export_simulation -of_objects [get_files C:/ip_repo/blk_mem_gen_1/blk_mem_gen_1.xci] -directory C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.ip_user_files -ipstatic_source_dir C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/modelsim} {questa=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/questa} {riviera=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/riviera} {activehdl=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+open_wave_config C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+source neural_acc_tb.tcl
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+source neural_acc_tb.tcl
+restart
+run all
+save_wave_config {C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg}
+open_project {C:/Users/HGR Sanjayamal/FYP/FYP.xpr}
+current_project neural_acc_v1_0_project
+current_project FYP
+current_project neural_acc_v1_0_project
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name floating_point_0 -dir C:/ip_repo
+set_property -dict [list CONFIG.Add_Sub_Value {Add} CONFIG.Flow_Control {NonBlocking} CONFIG.Maximum_Latency {false} CONFIG.C_Latency {1} CONFIG.Has_RESULT_TREADY {false}] [get_ips floating_point_0]
+generate_target {instantiation_template} [get_files c:/ip_repo/floating_point_0/floating_point_0.xci]
+generate_target all [get_files  c:/ip_repo/floating_point_0/floating_point_0.xci]
+catch { config_ip_cache -export [get_ips -all floating_point_0] }
+export_ip_user_files -of_objects [get_files c:/ip_repo/floating_point_0/floating_point_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/ip_repo/floating_point_0/floating_point_0.xci]
+launch_runs -jobs 2 floating_point_0_synth_1
+export_simulation -of_objects [get_files c:/ip_repo/floating_point_0/floating_point_0.xci] -directory C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.ip_user_files -ipstatic_source_dir C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/modelsim} {questa=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/questa} {riviera=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/riviera} {activehdl=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name floating_point_1 -dir C:/ip_repo
+set_property -dict [list CONFIG.Operation_Type {Multiply} CONFIG.Flow_Control {NonBlocking} CONFIG.Maximum_Latency {false} CONFIG.C_Latency {1} CONFIG.A_Precision_Type {Single} CONFIG.C_A_Exponent_Width {8} CONFIG.C_A_Fraction_Width {24} CONFIG.Result_Precision_Type {Single} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {24} CONFIG.C_Mult_Usage {Full_Usage} CONFIG.Has_RESULT_TREADY {false} CONFIG.C_Rate {1}] [get_ips floating_point_1]
+generate_target {instantiation_template} [get_files c:/ip_repo/floating_point_1/floating_point_1.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/ip_repo/floating_point_1/floating_point_1.xci]
+catch { config_ip_cache -export [get_ips -all floating_point_1] }
+export_ip_user_files -of_objects [get_files c:/ip_repo/floating_point_1/floating_point_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/ip_repo/floating_point_1/floating_point_1.xci]
+launch_runs -jobs 2 floating_point_1_synth_1
+export_simulation -of_objects [get_files c:/ip_repo/floating_point_1/floating_point_1.xci] -directory C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.ip_user_files -ipstatic_source_dir C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/modelsim} {questa=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/questa} {riviera=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/riviera} {activehdl=C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+open_wave_config C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+source neural_acc_tb.tcl
+add_wave {{/neural_acc_tb/neural_acc_v1_0}} 
+add_wave {{/neural_acc_tb/neural_acc_v1_0/frontend_module/weights}} 
+add_wave {{/neural_acc_tb/neural_acc_v1_0/frontend_module/mult}} 
+add_wave {{/neural_acc_tb/neural_acc_v1_0/frontend_module/add_1}} 
+save_wave_config {C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg}
+add_wave {{/neural_acc_tb/neural_acc_v1_0/frontend_module/sum}} {{/neural_acc_tb/neural_acc_v1_0/frontend_module/all_sum}} 
+save_wave_config {C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg}
+restart
+run all
+restart
+run all
+save_wave_config {C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+source neural_acc_tb.tcl
+restart
+run all
+restart
+run all
+add_wave {{/neural_acc_tb/neural_acc_v1_0/frontend_module/result_add_1}} 
+restart
+run all
+save_wave_config {C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+source neural_acc_tb.tcl
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+source neural_acc_tb.tcl
+restart
+run all
+save_wave_config {C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/ip_repo/neural_acc_v1_0_project/neural_acc_tb_behav.wcfg
+source neural_acc_tb.tcl
+restart
+run all
+close_sim
+close_project

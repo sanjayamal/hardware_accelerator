@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="neural_acc_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="neural_acc_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1036292433334fs"></ZoomStartTime>
+      <ZoomEndTime time="1036578433335fs"></ZoomEndTime>
+      <Cursor1Time time="1036379833000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="115"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wave_markers>
+      <marker time="1036280000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/neural_acc_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neural_acc_tb/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="group206" type="group">
+      <obj_property name="label">acc_tb</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/neural_acc_tb/tready_in" type="logic">
+         <obj_property name="ElementShortName">tready_in</obj_property>
+         <obj_property name="ObjectShortName">tready_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/tvalid_in" type="logic">
+         <obj_property name="ElementShortName">tvalid_in</obj_property>
+         <obj_property name="ObjectShortName">tvalid_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/counter" type="array">
+         <obj_property name="ElementShortName">counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group188" type="group">
+         <obj_property name="label">input_buf</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/neural_acc_tb/addra_input_buf" type="array">
+            <obj_property name="ElementShortName">addra_input_buf[9:0]</obj_property>
+            <obj_property name="ObjectShortName">addra_input_buf[9:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/douta_input_buf" type="array">
+            <obj_property name="ElementShortName">douta_input_buf[31:0]</obj_property>
+            <obj_property name="ObjectShortName">douta_input_buf[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FFD700</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group209" type="group">
+      <obj_property name="label">frontdend_module</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/counter" type="array">
+         <obj_property name="ElementShortName">counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/rd_counter" type="array">
+         <obj_property name="ElementShortName">rd_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_counter[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group205" type="group">
+         <obj_property name="label">write_enable</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/neural_acc_tb/en" type="logic">
+            <obj_property name="ElementShortName">en</obj_property>
+            <obj_property name="ObjectShortName">en</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/wea" type="logic">
+            <obj_property name="ElementShortName">wea</obj_property>
+            <obj_property name="ObjectShortName">wea</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/tvalid_in" type="logic">
+            <obj_property name="ElementShortName">tvalid_in</obj_property>
+            <obj_property name="ObjectShortName">tvalid_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/tready_in" type="logic">
+            <obj_property name="ElementShortName">tready_in</obj_property>
+            <obj_property name="ObjectShortName">tready_in</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group191" type="group">
+         <obj_property name="label">input_ram</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/wea" type="logic">
+            <obj_property name="ElementShortName">wea</obj_property>
+            <obj_property name="ObjectShortName">wea</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/addra_input_ram" type="array">
+            <obj_property name="ElementShortName">addra_input_ram[9:0]</obj_property>
+            <obj_property name="ObjectShortName">addra_input_ram[9:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/dina_input_ram" type="array">
+            <obj_property name="ElementShortName">dina_input_ram[31:0]</obj_property>
+            <obj_property name="ObjectShortName">dina_input_ram[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FFD700</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/addrb_input_ram" type="array">
+            <obj_property name="ElementShortName">addrb_input_ram[9:0]</obj_property>
+            <obj_property name="ObjectShortName">addrb_input_ram[9:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/doutb_input_ram" type="array">
+            <obj_property name="ElementShortName">doutb_input_ram[31:0]</obj_property>
+            <obj_property name="ObjectShortName">doutb_input_ram[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group260" type="group">
+         <obj_property name="label">weight</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/weights/ena" type="logic">
+            <obj_property name="ElementShortName">ena</obj_property>
+            <obj_property name="ObjectShortName">ena</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/weights/addra" type="array">
+            <obj_property name="ElementShortName">addra[15:0]</obj_property>
+            <obj_property name="ObjectShortName">addra[15:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/weights/douta" type="array">
+            <obj_property name="ElementShortName">douta[31:0]</obj_property>
+            <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group261" type="group">
+         <obj_property name="label">multifier</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/mult/s_axis_a_tvalid" type="logic">
+            <obj_property name="ElementShortName">s_axis_a_tvalid</obj_property>
+            <obj_property name="ObjectShortName">s_axis_a_tvalid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/mult/s_axis_a_tdata" type="array">
+            <obj_property name="ElementShortName">s_axis_a_tdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s_axis_a_tdata[31:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/mult/s_axis_b_tvalid" type="logic">
+            <obj_property name="ElementShortName">s_axis_b_tvalid</obj_property>
+            <obj_property name="ObjectShortName">s_axis_b_tvalid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/mult/s_axis_b_tdata" type="array">
+            <obj_property name="ElementShortName">s_axis_b_tdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s_axis_b_tdata[31:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/mult/m_axis_result_tvalid" type="logic">
+            <obj_property name="ElementShortName">m_axis_result_tvalid</obj_property>
+            <obj_property name="ObjectShortName">m_axis_result_tvalid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/mult/m_axis_result_tdata" type="array">
+            <obj_property name="ElementShortName">m_axis_result_tdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">m_axis_result_tdata[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group294" type="group">
+         <obj_property name="label">add_1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/add_1/s_axis_a_tvalid" type="logic">
+            <obj_property name="ElementShortName">s_axis_a_tvalid</obj_property>
+            <obj_property name="ObjectShortName">s_axis_a_tvalid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/add_1/s_axis_a_tdata" type="array">
+            <obj_property name="ElementShortName">s_axis_a_tdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s_axis_a_tdata[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/add_1/s_axis_b_tvalid" type="logic">
+            <obj_property name="ElementShortName">s_axis_b_tvalid</obj_property>
+            <obj_property name="ObjectShortName">s_axis_b_tvalid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/mult_add_1" type="array">
+            <obj_property name="ElementShortName">mult_add_1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">mult_add_1[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/add_1/m_axis_result_tvalid" type="logic">
+            <obj_property name="ElementShortName">m_axis_result_tvalid</obj_property>
+            <obj_property name="ObjectShortName">m_axis_result_tvalid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/result_add_1" type="array">
+            <obj_property name="ElementShortName">result_add_1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_add_1[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/sum" type="array">
+         <obj_property name="ElementShortName">sum[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sum[31:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">24</obj_property>
+         <obj_property name="radix_otherWidth">8</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/all_sum" type="array">
+         <obj_property name="ElementShortName">all_sum[31:0]</obj_property>
+         <obj_property name="ObjectShortName">all_sum[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">24</obj_property>
+         <obj_property name="radix_otherWidth">8</obj_property>
+      </wvobject>
+      <wvobject fp_name="group717" type="group">
+         <obj_property name="label">bias</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/ena_bias" type="logic">
+            <obj_property name="ElementShortName">ena_bias</obj_property>
+            <obj_property name="ObjectShortName">ena_bias</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/addra_bias" type="array">
+            <obj_property name="ElementShortName">addra_bias[5:0]</obj_property>
+            <obj_property name="ObjectShortName">addra_bias[5:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/douta_bias" type="array">
+            <obj_property name="ElementShortName">douta_bias[31:0]</obj_property>
+            <obj_property name="ObjectShortName">douta_bias[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group720" type="group">
+         <obj_property name="label">add_2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/a_tvalid_add_2" type="logic">
+            <obj_property name="ElementShortName">a_tvalid_add_2</obj_property>
+            <obj_property name="ObjectShortName">a_tvalid_add_2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/b_tvalid_add_2" type="logic">
+            <obj_property name="ElementShortName">b_tvalid_add_2</obj_property>
+            <obj_property name="ObjectShortName">b_tvalid_add_2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/douta_bias" type="array">
+            <obj_property name="ElementShortName">douta_bias[31:0]</obj_property>
+            <obj_property name="ObjectShortName">douta_bias[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/all_sum" type="array">
+            <obj_property name="ElementShortName">all_sum[31:0]</obj_property>
+            <obj_property name="ObjectShortName">all_sum[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/result_tvalid_add_2" type="logic">
+            <obj_property name="ElementShortName">result_tvalid_add_2</obj_property>
+            <obj_property name="ObjectShortName">result_tvalid_add_2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/result_add_2" type="array">
+            <obj_property name="ElementShortName">result_add_2[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_add_2[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group59" type="group">
+         <obj_property name="label">exp</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/a_tvalid_exp" type="logic">
+            <obj_property name="ElementShortName">a_tvalid_exp</obj_property>
+            <obj_property name="ObjectShortName">a_tvalid_exp</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/result_add_2" type="array">
+            <obj_property name="ElementShortName">result_add_2[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_add_2[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/result_tvalid_exp" type="logic">
+            <obj_property name="ElementShortName">result_tvalid_exp</obj_property>
+            <obj_property name="ObjectShortName">result_tvalid_exp</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/result_exp" type="array">
+            <obj_property name="ElementShortName">result_exp[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_exp[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group242" type="group">
+         <obj_property name="label">add_3</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/a_tvalid_add_3" type="logic">
+            <obj_property name="ElementShortName">a_tvalid_add_3</obj_property>
+            <obj_property name="ObjectShortName">a_tvalid_add_3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/b_tvalid_add_3" type="logic">
+            <obj_property name="ElementShortName">b_tvalid_add_3</obj_property>
+            <obj_property name="ObjectShortName">b_tvalid_add_3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/result_exp" type="array">
+            <obj_property name="ElementShortName">result_exp[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_exp[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/result_tvalid_add_3" type="logic">
+            <obj_property name="ElementShortName">result_tvalid_add_3</obj_property>
+            <obj_property name="ObjectShortName">result_tvalid_add_3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/result_add_3" type="array">
+            <obj_property name="ElementShortName">result_add_3[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_add_3[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group445" type="group">
+         <obj_property name="label">div</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/a_tvalid_div" type="logic">
+            <obj_property name="ElementShortName">a_tvalid_div</obj_property>
+            <obj_property name="ObjectShortName">a_tvalid_div</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/b_tvalid_div" type="logic">
+            <obj_property name="ElementShortName">b_tvalid_div</obj_property>
+            <obj_property name="ObjectShortName">b_tvalid_div</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/exp_div" type="array">
+            <obj_property name="ElementShortName">exp_div[31:0]</obj_property>
+            <obj_property name="ObjectShortName">exp_div[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/result_add_3" type="array">
+            <obj_property name="ElementShortName">result_add_3[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_add_3[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/result_tvalid_div" type="logic">
+            <obj_property name="ElementShortName">result_tvalid_div</obj_property>
+            <obj_property name="ObjectShortName">result_tvalid_div</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/result_div" type="array">
+            <obj_property name="ElementShortName">result_div[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_div[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/dout" type="array">
+         <obj_property name="ElementShortName">dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">24</obj_property>
+         <obj_property name="radix_otherWidth">8</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group236" type="group">
+      <obj_property name="label">backend_module</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/en" type="logic">
+         <obj_property name="ElementShortName">en</obj_property>
+         <obj_property name="ObjectShortName">en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/wea" type="logic">
+         <obj_property name="ElementShortName">wea</obj_property>
+         <obj_property name="ObjectShortName">wea</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/tvalid_out" type="logic">
+         <obj_property name="ElementShortName">tvalid_out</obj_property>
+         <obj_property name="ObjectShortName">tvalid_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/tready_out" type="logic">
+         <obj_property name="ElementShortName">tready_out</obj_property>
+         <obj_property name="ObjectShortName">tready_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/counter" type="array">
+         <obj_property name="ElementShortName">counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/rd_counter" type="array">
+         <obj_property name="ElementShortName">rd_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_counter[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/gl_counter" type="array">
+         <obj_property name="ElementShortName">gl_counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">gl_counter[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group269" type="group">
+         <obj_property name="label">input_ram</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/addra_input_ram" type="array">
+            <obj_property name="ElementShortName">addra_input_ram[6:0]</obj_property>
+            <obj_property name="ObjectShortName">addra_input_ram[6:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/dina_input_ram" type="array">
+            <obj_property name="ElementShortName">dina_input_ram[31:0]</obj_property>
+            <obj_property name="ObjectShortName">dina_input_ram[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/addrb_input_ram" type="array">
+            <obj_property name="ElementShortName">addrb_input_ram[6:0]</obj_property>
+            <obj_property name="ObjectShortName">addrb_input_ram[6:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/doutb_input_ram" type="array">
+            <obj_property name="ElementShortName">doutb_input_ram[31:0]</obj_property>
+            <obj_property name="ObjectShortName">doutb_input_ram[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group337" type="group">
+         <obj_property name="label">weights</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/weights/ena" type="logic">
+            <obj_property name="ElementShortName">ena</obj_property>
+            <obj_property name="ObjectShortName">ena</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/weights/addra" type="array">
+            <obj_property name="ElementShortName">addra[9:0]</obj_property>
+            <obj_property name="ObjectShortName">addra[9:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/weights/douta" type="array">
+            <obj_property name="ElementShortName">douta[31:0]</obj_property>
+            <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group1792" type="group">
+         <obj_property name="label">mult</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/weights/douta" type="array">
+            <obj_property name="ElementShortName">douta[31:0]</obj_property>
+            <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/doutb_input_ram" type="array">
+            <obj_property name="ElementShortName">doutb_input_ram[31:0]</obj_property>
+            <obj_property name="ObjectShortName">doutb_input_ram[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_tvaild_mult" type="logic">
+            <obj_property name="ElementShortName">result_tvaild_mult</obj_property>
+            <obj_property name="ObjectShortName">result_tvaild_mult</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_mult" type="array">
+            <obj_property name="ElementShortName">result_mult[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_mult[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group1899" type="group">
+         <obj_property name="label">add_1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/a_tvalid_add_1" type="logic">
+            <obj_property name="ElementShortName">a_tvalid_add_1</obj_property>
+            <obj_property name="ObjectShortName">a_tvalid_add_1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/b_tvalid_add_1" type="logic">
+            <obj_property name="ElementShortName">b_tvalid_add_1</obj_property>
+            <obj_property name="ObjectShortName">b_tvalid_add_1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/sum" type="array">
+            <obj_property name="ElementShortName">sum[31:0]</obj_property>
+            <obj_property name="ObjectShortName">sum[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/mult_add_1" type="array">
+            <obj_property name="ElementShortName">mult_add_1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">mult_add_1[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_tvaild_add_1" type="logic">
+            <obj_property name="ElementShortName">result_tvaild_add_1</obj_property>
+            <obj_property name="ObjectShortName">result_tvaild_add_1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_add_1" type="array">
+            <obj_property name="ElementShortName">result_add_1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_add_1[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/all_sum" type="array">
+         <obj_property name="ElementShortName">all_sum[31:0]</obj_property>
+         <obj_property name="ObjectShortName">all_sum[31:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">24</obj_property>
+         <obj_property name="radix_otherWidth">8</obj_property>
+      </wvobject>
+      <wvobject fp_name="group535" type="group">
+         <obj_property name="label">bais</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/bias/ena" type="logic">
+            <obj_property name="ElementShortName">ena</obj_property>
+            <obj_property name="ObjectShortName">ena</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/bias/addra" type="array">
+            <obj_property name="ElementShortName">addra[3:0]</obj_property>
+            <obj_property name="ObjectShortName">addra[3:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/bias/douta" type="array">
+            <obj_property name="ElementShortName">douta[31:0]</obj_property>
+            <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group338" type="group">
+         <obj_property name="label">add_2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/a_tvalid_add_2" type="logic">
+            <obj_property name="ElementShortName">a_tvalid_add_2</obj_property>
+            <obj_property name="ObjectShortName">a_tvalid_add_2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/b_tvalid_add_2" type="logic">
+            <obj_property name="ElementShortName">b_tvalid_add_2</obj_property>
+            <obj_property name="ObjectShortName">b_tvalid_add_2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/douta_bias" type="array">
+            <obj_property name="ElementShortName">douta_bias[31:0]</obj_property>
+            <obj_property name="ObjectShortName">douta_bias[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/all_sum" type="array">
+            <obj_property name="ElementShortName">all_sum[31:0]</obj_property>
+            <obj_property name="ObjectShortName">all_sum[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_tvalid_add_2" type="logic">
+            <obj_property name="ElementShortName">result_tvalid_add_2</obj_property>
+            <obj_property name="ObjectShortName">result_tvalid_add_2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_add_2" type="array">
+            <obj_property name="ElementShortName">result_add_2[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_add_2[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group240" type="group">
+         <obj_property name="label">exp</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/a_tvalid_exp" type="logic">
+            <obj_property name="ElementShortName">a_tvalid_exp</obj_property>
+            <obj_property name="ObjectShortName">a_tvalid_exp</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_add_2" type="array">
+            <obj_property name="ElementShortName">result_add_2[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_add_2[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_tvalid_exp" type="logic">
+            <obj_property name="ElementShortName">result_tvalid_exp</obj_property>
+            <obj_property name="ObjectShortName">result_tvalid_exp</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_exp" type="array">
+            <obj_property name="ElementShortName">result_exp[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_exp[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group469" type="group">
+         <obj_property name="label">add_3</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/a_tvalid_add_3" type="logic">
+            <obj_property name="ElementShortName">a_tvalid_add_3</obj_property>
+            <obj_property name="ObjectShortName">a_tvalid_add_3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/b_tvalid_add_3" type="logic">
+            <obj_property name="ElementShortName">b_tvalid_add_3</obj_property>
+            <obj_property name="ObjectShortName">b_tvalid_add_3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/add_3/s_axis_a_tdata" type="array">
+            <obj_property name="ElementShortName">s_axis_a_tdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s_axis_a_tdata[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_exp" type="array">
+            <obj_property name="ElementShortName">result_exp[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_exp[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_tvalid_add_3" type="logic">
+            <obj_property name="ElementShortName">result_tvalid_add_3</obj_property>
+            <obj_property name="ObjectShortName">result_tvalid_add_3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_add_3" type="array">
+            <obj_property name="ElementShortName">result_add_3[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_add_3[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/exp_div" type="array">
+         <obj_property name="ElementShortName">exp_div[31:0]</obj_property>
+         <obj_property name="ObjectShortName">exp_div[31:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">24</obj_property>
+         <obj_property name="radix_otherWidth">8</obj_property>
+      </wvobject>
+      <wvobject fp_name="group998" type="group">
+         <obj_property name="label">div</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/a_tvalid_div" type="logic">
+            <obj_property name="ElementShortName">a_tvalid_div</obj_property>
+            <obj_property name="ObjectShortName">a_tvalid_div</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/b_tvalid_div" type="logic">
+            <obj_property name="ElementShortName">b_tvalid_div</obj_property>
+            <obj_property name="ObjectShortName">b_tvalid_div</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/exp_div" type="array">
+            <obj_property name="ElementShortName">exp_div[31:0]</obj_property>
+            <obj_property name="ObjectShortName">exp_div[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_add_3" type="array">
+            <obj_property name="ElementShortName">result_add_3[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_add_3[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_tvalid_div" type="logic">
+            <obj_property name="ElementShortName">result_tvalid_div</obj_property>
+            <obj_property name="ObjectShortName">result_tvalid_div</obj_property>
+         </wvobject>
+         <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_div" type="array">
+            <obj_property name="ElementShortName">result_div[31:0]</obj_property>
+            <obj_property name="ObjectShortName">result_div[31:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">24</obj_property>
+            <obj_property name="radix_otherWidth">8</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/final_counter" type="array">
+      <obj_property name="ElementShortName">final_counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">final_counter[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group144" type="group">
+      <obj_property name="label">result_ram</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_ram/wea" type="array">
+         <obj_property name="ElementShortName">wea[0:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_ram/addra" type="array">
+         <obj_property name="ElementShortName">addra[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_ram/dina" type="array">
+         <obj_property name="ElementShortName">dina[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">24</obj_property>
+         <obj_property name="radix_otherWidth">8</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_ram/addrb" type="array">
+         <obj_property name="ElementShortName">addrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addrb[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_ram/doutb" type="array">
+         <obj_property name="ElementShortName">doutb[31:0]</obj_property>
+         <obj_property name="ObjectShortName">doutb[31:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">24</obj_property>
+         <obj_property name="radix_otherWidth">8</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

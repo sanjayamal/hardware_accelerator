@@ -1,0 +1,24 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/floating_point_11/sim/floating_point_11.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_11
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/floating_point_10/sim/floating_point_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_10
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/floating_point_9/sim/floating_point_9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_9
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/floating_point_8/sim/floating_point_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_8
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/floating_point_7/sim/floating_point_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_7
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/floating_point_6/sim/floating_point_6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_6
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/floating_point_5/sim/floating_point_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_5
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/floating_point_4/sim/floating_point_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_4
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/floating_point_3_1/sim/floating_point_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/floating_point_2/sim/floating_point_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/floating_point_0/sim/floating_point_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/floating_point_1/sim/floating_point_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_1

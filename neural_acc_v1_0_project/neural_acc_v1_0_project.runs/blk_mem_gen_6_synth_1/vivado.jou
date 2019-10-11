@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Oct  4 11:12:14 2019
+# Process ID: 1320
+# Current directory: C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.runs/blk_mem_gen_6_synth_1
+# Command line: vivado.exe -log blk_mem_gen_6.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_6.tcl
+# Log file: C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.runs/blk_mem_gen_6_synth_1/blk_mem_gen_6.vds
+# Journal file: C:/ip_repo/neural_acc_v1_0_project/neural_acc_v1_0_project.runs/blk_mem_gen_6_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_6.tcl -notrace

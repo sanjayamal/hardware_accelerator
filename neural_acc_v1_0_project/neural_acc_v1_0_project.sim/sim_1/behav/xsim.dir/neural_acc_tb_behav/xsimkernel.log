@@ -1,0 +1,4 @@
+Running: xsim.dir/neural_acc_tb_behav/xsimk.exe -simmode gui -wdb neural_acc_tb_behav.wdb -simrunnum 0 -socket 53788
+Design successfully loaded
+Design Loading Memory Usage: 19404 KB (Peak: 19404 KB)
+Design Loading CPU Usage: 108 ms

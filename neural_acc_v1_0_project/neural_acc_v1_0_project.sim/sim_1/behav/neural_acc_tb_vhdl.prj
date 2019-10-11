@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../floating_point_11/sim/floating_point_11.vhd"
+vhdl xil_defaultlib  "../../../../floating_point_10/sim/floating_point_10.vhd"
+vhdl xil_defaultlib  "../../../../floating_point_9/sim/floating_point_9.vhd"
+vhdl xil_defaultlib  "../../../../floating_point_8/sim/floating_point_8.vhd"
+vhdl xil_defaultlib  "../../../../floating_point_7/sim/floating_point_7.vhd"
+vhdl xil_defaultlib  "../../../../floating_point_6/sim/floating_point_6.vhd"
+vhdl xil_defaultlib  "../../../../floating_point_5/sim/floating_point_5.vhd"
+vhdl xil_defaultlib  "../../../../floating_point_4/sim/floating_point_4.vhd"
+vhdl xil_defaultlib  "../../../../floating_point_3_1/sim/floating_point_3.vhd"
+vhdl xil_defaultlib  "../../../../floating_point_2/sim/floating_point_2.vhd"
+vhdl xil_defaultlib  "../../../../floating_point_0/sim/floating_point_0.vhd"
+vhdl xil_defaultlib  "../../../../floating_point_1/sim/floating_point_1.vhd"
+
+# Do not sort compile order
+nosort
