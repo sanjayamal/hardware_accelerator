@@ -11,12 +11,12 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1036292433334fs"></ZoomStartTime>
-      <ZoomEndTime time="1036578433335fs"></ZoomEndTime>
-      <Cursor1Time time="1036379833000fs"></Cursor1Time>
+      <ZoomStartTime time="1049365766666fs"></ZoomStartTime>
+      <ZoomEndTime time="1049454966667fs"></ZoomEndTime>
+      <Cursor1Time time="1049440100000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="115"></NameColumnWidth>
+      <NameColumnWidth column_width="99"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="8" />
@@ -72,7 +72,6 @@
    <wvobject fp_name="group209" type="group">
       <obj_property name="label">frontdend_module</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/counter" type="array">
          <obj_property name="ElementShortName">counter[31:0]</obj_property>
          <obj_property name="ObjectShortName">counter[31:0]</obj_property>
@@ -153,7 +152,6 @@
       <wvobject fp_name="group261" type="group">
          <obj_property name="label">multifier</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/mult/s_axis_a_tvalid" type="logic">
             <obj_property name="ElementShortName">s_axis_a_tvalid</obj_property>
             <obj_property name="ObjectShortName">s_axis_a_tvalid</obj_property>
@@ -196,7 +194,6 @@
       <wvobject fp_name="group294" type="group">
          <obj_property name="label">add_1</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/add_1/s_axis_a_tvalid" type="logic">
             <obj_property name="ElementShortName">s_axis_a_tvalid</obj_property>
             <obj_property name="ObjectShortName">s_axis_a_tvalid</obj_property>
@@ -261,7 +258,6 @@
       <wvobject fp_name="group717" type="group">
          <obj_property name="label">bias</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/ena_bias" type="logic">
             <obj_property name="ElementShortName">ena_bias</obj_property>
             <obj_property name="ObjectShortName">ena_bias</obj_property>
@@ -274,7 +270,7 @@
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/frontend_module/douta_bias" type="array">
             <obj_property name="ElementShortName">douta_bias[31:0]</obj_property>
             <obj_property name="ObjectShortName">douta_bias[31:0]</obj_property>
-            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
             <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
             <obj_property name="radix_fractionWidth">24</obj_property>
             <obj_property name="radix_otherWidth">8</obj_property>
@@ -477,7 +473,6 @@
       <wvobject fp_name="group269" type="group">
          <obj_property name="label">input_ram</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/addra_input_ram" type="array">
             <obj_property name="ElementShortName">addra_input_ram[6:0]</obj_property>
             <obj_property name="ObjectShortName">addra_input_ram[6:0]</obj_property>
@@ -508,7 +503,6 @@
       <wvobject fp_name="group337" type="group">
          <obj_property name="label">weights</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/weights/ena" type="logic">
             <obj_property name="ElementShortName">ena</obj_property>
             <obj_property name="ObjectShortName">ena</obj_property>
@@ -530,7 +524,6 @@
       <wvobject fp_name="group1792" type="group">
          <obj_property name="label">mult</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/weights/douta" type="array">
             <obj_property name="ElementShortName">douta[31:0]</obj_property>
             <obj_property name="ObjectShortName">douta[31:0]</obj_property>
@@ -563,7 +556,6 @@
       <wvobject fp_name="group1899" type="group">
          <obj_property name="label">add_1</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/a_tvalid_add_1" type="logic">
             <obj_property name="ElementShortName">a_tvalid_add_1</obj_property>
             <obj_property name="ObjectShortName">a_tvalid_add_1</obj_property>
@@ -612,7 +604,6 @@
       <wvobject fp_name="group535" type="group">
          <obj_property name="label">bais</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/bias/ena" type="logic">
             <obj_property name="ElementShortName">ena</obj_property>
             <obj_property name="ObjectShortName">ena</obj_property>
@@ -634,7 +625,6 @@
       <wvobject fp_name="group338" type="group">
          <obj_property name="label">add_2</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/a_tvalid_add_2" type="logic">
             <obj_property name="ElementShortName">a_tvalid_add_2</obj_property>
             <obj_property name="ObjectShortName">a_tvalid_add_2</obj_property>
@@ -675,7 +665,6 @@
       <wvobject fp_name="group240" type="group">
          <obj_property name="label">exp</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/a_tvalid_exp" type="logic">
             <obj_property name="ElementShortName">a_tvalid_exp</obj_property>
             <obj_property name="ObjectShortName">a_tvalid_exp</obj_property>
@@ -704,7 +693,6 @@
       <wvobject fp_name="group469" type="group">
          <obj_property name="label">add_3</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/a_tvalid_add_3" type="logic">
             <obj_property name="ElementShortName">a_tvalid_add_3</obj_property>
             <obj_property name="ObjectShortName">a_tvalid_add_3</obj_property>
@@ -753,7 +741,6 @@
       <wvobject fp_name="group998" type="group">
          <obj_property name="label">div</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/a_tvalid_div" type="logic">
             <obj_property name="ElementShortName">a_tvalid_div</obj_property>
             <obj_property name="ObjectShortName">a_tvalid_div</obj_property>
@@ -800,6 +787,7 @@
    <wvobject fp_name="group144" type="group">
       <obj_property name="label">result_ram</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/neural_acc_tb/neural_acc_v1_0/backend_module/result_ram/wea" type="array">
          <obj_property name="ElementShortName">wea[0:0]</obj_property>
          <obj_property name="ObjectShortName">wea[0:0]</obj_property>

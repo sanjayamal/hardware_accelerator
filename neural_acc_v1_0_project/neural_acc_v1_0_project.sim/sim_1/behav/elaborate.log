@@ -3,17 +3,17 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto b68768d3ec4b4f7ea392373f5c7135fb --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L xbip_pipe_v3_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_3 -L xbip_dsp48_multadd_v3_0_3 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L floating_point_v7_1_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot neural_acc_tb_behav xil_defaultlib.neural_acc_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port s_axis_a_tvalid [C:/ip_repo/backend_module.v:364]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ena [C:/ip_repo/neural_acc_tb.v:88]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ena [C:/ip_repo/frontend_module.v:360]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [C:/ip_repo/frontend_module.v:365]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ena [C:/ip_repo/backend_module.v:347]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [C:/ip_repo/backend_module.v:352]
-WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 4 for port addra [C:/ip_repo/backend_module.v:387]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ena [C:/ip_repo/backend_module.v:427]
-WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 4 for port addra [C:/ip_repo/backend_module.v:429]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [C:/ip_repo/backend_module.v:432]
-WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 4 for port addrb [C:/ip_repo/backend_module.v:433]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port s_axis_a_tvalid [G:/Project/Level4_hw_acc/hardware_accelerator/backend_module.v:433]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ena [G:/Project/Level4_hw_acc/hardware_accelerator/neural_acc_tb.v:88]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ena [G:/Project/Level4_hw_acc/hardware_accelerator/frontend_module.v:387]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [G:/Project/Level4_hw_acc/hardware_accelerator/frontend_module.v:392]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ena [G:/Project/Level4_hw_acc/hardware_accelerator/backend_module.v:416]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [G:/Project/Level4_hw_acc/hardware_accelerator/backend_module.v:421]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 4 for port addra [G:/Project/Level4_hw_acc/hardware_accelerator/backend_module.v:456]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ena [G:/Project/Level4_hw_acc/hardware_accelerator/backend_module.v:496]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 4 for port addra [G:/Project/Level4_hw_acc/hardware_accelerator/backend_module.v:498]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [G:/Project/Level4_hw_acc/hardware_accelerator/backend_module.v:501]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 4 for port addrb [G:/Project/Level4_hw_acc/hardware_accelerator/backend_module.v:502]
 WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
 Completed static elaboration
 Starting simulation data flow analysis

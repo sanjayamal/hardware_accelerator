@@ -38,46 +38,66 @@ reg [31:0]mult_add_1=0;
 reg[31:0]all_sum=0;
 reg[31:0]all_sum_add_2=0;
 reg [31:0]exp_div=0;
+//////////////////////
 //input_ram variables
+//////////////////////
 reg [6:0]addra_input_ram=0;
 reg [6:0]addrb_input_ram=0;
 wire [31:0]doutb_input_ram;
+//////////////////////
 //weights varibles
+//////////////////////
 reg ena_weights;
 reg [9:0] addra_weights=0;
 wire [31:0] douta_weights;
+//////////////////////
 // mult variable
+//////////////////////
 wire [31:0] result_mult;
 wire result_tvaild_mult;
+//////////////////////
 // add_1 variable
+//////////////////////
 wire [31:0] result_add_1;
 wire result_tvaild_add_1;
 reg a_tvalid_add_1=0;
 reg b_tvalid_add_1=0;
+//////////////////////
 // bias variable
+//////////////////////
 reg ena_bias=0;
 reg [5:0]addra_bias=0;
 wire [31:0] douta_bias;
+//////////////////////
 // add_2 variable
+//////////////////////
 wire [31:0]result_add_2;
 reg a_tvalid_add_2=0;
 reg b_tvalid_add_2=0;
 wire result_tvalid_add_2;
+//////////////////////
 //exp variable
+//////////////////////
 wire result_tvalid_exp;
 wire [31:0]result_exp;
 reg a_tvalid_exp=0;
+//////////////////////
 // add_3 variable
+//////////////////////
 wire result_tvalid_add_3;
 wire [31:0]result_add_3;
 reg a_tvalid_add_3=0;
 reg b_tvalid_add_3=0;
+//////////////////////
 // div variables
+//////////////////////
 reg a_tvalid_div=0;
 reg b_tvalid_div=0;
 wire result_tvalid_div;
 wire [31:0] result_div;
+//////////////////////
 //result_ram
+//////////////////////
 reg [6:0]addra_result_ram=0;
 reg [6:0]addrb_result_ram=0;
 wire [31:0]doutb_result_ram;
@@ -89,7 +109,9 @@ initial begin
 end  
 
 assign wea=tvalid_out && tready_out;
-
+/////////////////////////////////////////////////
+//// gl_counter increment 
+////////////////////////////////////////////////
 always @(posedge clk)begin
  if(en==1)begin
    if(done==1)begin
@@ -98,6 +120,9 @@ always @(posedge clk)begin
     gl_counter=gl_counter+1;
  end
 end
+/////////////////////////////////////////////////
+//// counter increment 
+////////////////////////////////////////////////
 always @(posedge clk)begin
  if(en==1)begin
     if(done==1)begin
@@ -108,7 +133,9 @@ always @(posedge clk)begin
     end
  end
 end
-
+/////////////////////////////////////////////////
+//// tvalid_out 
+////////////////////////////////////////////////
 always @(posedge clk)begin
  if(en==1)begin
     if(counter==0)begin
@@ -125,7 +152,9 @@ always @(posedge clk)begin
       end
  end
 end
-
+/////////////////////////////////////////////////
+//// input_ram write address increment 
+////////////////////////////////////////////////
 always @(posedge clk)begin
  if(en==1)begin
     if(wea==1 && gl_counter > 1573 )begin
@@ -133,7 +162,9 @@ always @(posedge clk)begin
     end
  end
 end
-
+/////////////////////////////////////////////////
+//// rd_counter increment 
+////////////////////////////////////////////////
 always @(posedge clk)begin
  if(en==1)begin
     if(counter!=0 && counter !=65)begin
@@ -144,9 +175,12 @@ always @(posedge clk)begin
     end
  end
 end
+/////////////////////////////////////////////////
+//// input_ram read address increment 
+////////////////////////////////////////////////
 always @(posedge clk)begin
  if(en==1)begin
-    if(counter==65 && gl_counter!=51879)begin
+    if(counter==65 )begin /////&& gl_counter!=51879
        addrb_input_ram = addrb_input_ram+1;
     end
     if(addrb_input_ram==64)begin
@@ -154,6 +188,9 @@ always @(posedge clk)begin
     end
  end
 end
+/////////////////////////////////////////////////
+//// weights rom enble 
+////////////////////////////////////////////////
 always @(posedge clk)begin
  if(en==1)begin
     if(gl_counter==51750)begin
@@ -164,6 +201,9 @@ always @(posedge clk)begin
     end
  end
 end
+/////////////////////////////////////////////////
+//// weights rom read address increment 
+////////////////////////////////////////////////
 always @(posedge clk)begin
  if(en==1)begin
     if(gl_counter >= 51751)begin
@@ -171,25 +211,22 @@ always @(posedge clk)begin
     end
  end
 end
-always @(posedge clk)begin  ///negedge-----------------------------
+/////////////////////////////////////////////////
+//// result of add_1 equal to all sum after 64
+////////////////////////////////////////////////
+always @(posedge clk)begin  
   if(en==1)begin
    if(addrb_input_ram==3)begin
-     //all_sum =sum;
      all_sum =result_add_1;
    end
   end
 end
-
-//always @(posedge clk)begin
-//  if(en==1)begin
-//   if(addrb_input_ram==1)begin
-//    all_sum_add_2= all_sum ;
-//   end
-//  end
-//end
+/////////////////////////////////////////////////
+//// result of add_1 equal to sum always
+////////////////////////////////////////////////
 always @(negedge clk)begin
  if(en==1)begin
-    if(addrb_input_ram==2)begin
+    if(addrb_input_ram==2 && gl_counter > 51755 )begin
     sum =0;
      end
     if(counter==65 && addrb_input_ram !=2)begin
@@ -197,9 +234,9 @@ always @(negedge clk)begin
     end
  end
 end
-
-
-
+/////////////////////////////////////////////////
+//// add_2 enble
+////////////////////////////////////////////////
 always @(posedge clk)begin
  if(en==1)begin
     if(gl_counter== 51751)begin
@@ -215,6 +252,9 @@ always @(posedge clk)begin
     end
  end
 end
+/////////////////////////////////////////////////
+//// result of multifer equal to mult_add_1 always
+////////////////////////////////////////////////
 always @(posedge clk)begin
   if(en==1)begin
      if(result_tvaild_add_1==1)begin
@@ -222,7 +262,9 @@ always @(posedge clk)begin
      end
   end
 end
-
+/////////////////////////////////////////////////
+//// bias rom read address increment
+////////////////////////////////////////////////
 always @(posedge clk)begin
   if(en==1)begin
    if(addrb_input_ram==1 && gl_counter >51820 && gl_counter!=51818)begin
@@ -230,6 +272,9 @@ always @(posedge clk)begin
    end
   end
 end
+/////////////////////////////////////////////////
+//// bias enble
+////////////////////////////////////////////////
 always @(posedge clk)begin
   if(en==1)begin
    if(gl_counter==51816)begin
@@ -240,7 +285,9 @@ always @(posedge clk)begin
    end
   end
 end
-
+/////////////////////////////////////////////////
+//// add_2 enble
+////////////////////////////////////////////////
 always @(posedge clk)begin
   if(en==1)begin
    if(gl_counter==51817)begin
@@ -251,17 +298,19 @@ always @(posedge clk)begin
    end
   end
 end
-
 always @(posedge clk)begin
   if(en==1)begin
    if(gl_counter==51817)begin
      b_tvalid_add_2 =1;
    end
-  if(gl_counter== 52457)begin
-   b_tvalid_add_2 =0;
+   if(gl_counter== 52457)begin
+     b_tvalid_add_2 =0;
    end
   end
 end
+/////////////////////////////////////////////////
+//// exponent enble
+////////////////////////////////////////////////
 always @(posedge clk)begin
   if(en==1)begin
    if(gl_counter==51818)begin
@@ -272,6 +321,9 @@ always @(posedge clk)begin
    end
  end
 end
+/////////////////////////////////////////////////
+//// add_3 enble
+////////////////////////////////////////////////
 always @(posedge clk)begin
   if(en==1)begin
    if(gl_counter==51819)begin
@@ -282,7 +334,6 @@ always @(posedge clk)begin
    end
   end
 end
-
 always @(posedge clk)begin
   if(en==1)begin
    if(gl_counter==51819)begin 
@@ -293,6 +344,9 @@ always @(posedge clk)begin
    end
   end
 end
+/////////////////////////////////////////////////
+//// result of exponent equal to exp_div always
+////////////////////////////////////////////////
 always @(posedge clk)begin
   if(en==1)begin
    if(result_tvalid_add_3==1)begin
@@ -300,49 +354,49 @@ always @(posedge clk)begin
    end
   end
 end
+/////////////////////////////////////////////////
+//// div enble
+////////////////////////////////////////////////
 always @(posedge clk)begin
   if(en==1)begin
-  //result_tvalid_exp==1
    if(gl_counter==51820)begin
      a_tvalid_div =1;
    end
-    if(gl_counter==52462)begin
+    if(gl_counter==52460)begin
      a_tvalid_div =0;
    end
   end
 end
-
 always @(posedge clk)begin
   if(en==1)begin
-   //result_tvalid_exp==1
    if(gl_counter==51820)begin
      b_tvalid_div =1;
    end
-  if(gl_counter==52462)begin
+   if(gl_counter==52460)begin
      b_tvalid_div =0;
-  end
+   end
   end
 end
 always @(posedge clk)begin
   if(en==1)begin
-   if(gl_counter==51948)begin
+   if(gl_counter==51822)begin
      wea_result_ram =1;
    end
-     if(gl_counter==52588)begin
+     if(gl_counter==52460)begin
       wea_result_ram =0;
     end
   end
 end
 always @(posedge clk)begin
   if(en==1)begin
-   if(wea_result_ram ==1 && gl_counter != 51948 && final_counter==63)begin
+   if(wea_result_ram ==1 && gl_counter != 51822 && final_counter==63)begin
      addra_result_ram=addra_result_ram+1;
    end
   end
 end
 always @(posedge clk)begin
  if(en==1)begin
-    if(gl_counter>=51949 && gl_counter<=52588)begin
+    if(gl_counter>=51823 && gl_counter<=52463)begin
      final_counter=final_counter+1;
     end
     if(final_counter==64 )begin
@@ -352,7 +406,7 @@ always @(posedge clk)begin
 end
 always @(posedge clk)begin
   if(en==1)begin
-   if (gl_counter >52588 && gl_counter <=52598)begin
+   if (gl_counter >52463 && gl_counter <=52473)begin
      addrb_result_ram=addrb_result_ram+1;
    end
   end
